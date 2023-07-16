@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SLIDER - 2</title>
+
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+	<style type="text/css">
+		
+		.dot
+		{
+			padding: 15px;
+			border-radius: 50%;
+			background-color: #5D6D7E;
+			border: none;
+			position: absolute;
+			transition: 0.4s;	
+		}
+		.prev
+		{
+			position: absolute;
+			top:36%;
+			left: 3%;
+		}
+		.next
+		{
+			position: absolute;
+			top: 36%;
+			right: 3%;
+		}
+		
+		.dot:hover
+		{
+			background-color: #AEB6BF ;
+		}
+
+	</style>
+
+		<script type="text/javascript">
+		
+		var t = 0
+		function slider()
+		{
+			var imgname = document.getElementsByClassName('img')
+			var dots = document.getElementsByClassName('dot')
+
+			for(var i = 0; i < imgname.length; i++)
+			{
+				imgname[i].style.display = "none";
+			}
+
+			imgname[t].style.display = "block";
+		}
+
+		function next()
+		{
+			var imgname = document.getElementsByClassName('img')
+			t++;
+			if(t == imgname.length)
+			{
+				t = 0;
+			}
+			slider();
+		}
+
+		function prev()
+		{
+			var imgname = document.getElementsByClassName('img')
+			if(t == 0)
+			{
+				t = imgname.length 
+			}
+			t--;
+			slider();
+		}
+
+		window.onload = function()
+		{
+			slider();
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<img src="image/js15.jpg" width="100%" height="500%" class="img">
+	<img src="image/js14.jpg" width="100%" height="500%" class="img">
+	<img src="image/js13.jpeg" width="100%" height="500%" class="img">
+	<img src="image/js12.jpg" width="100%" height="500%" class="img">
+
+	<button onclick="prev()" class="dot prev"><i class="fa-solid fa-backward-fast"></i></button>
+	<button onclick="next()" class="dot next"><i class="fa-solid fa-forward-fast"></i></button>
+
+</body>
+</html>

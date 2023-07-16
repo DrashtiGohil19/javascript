@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tik tac toe</title>
+
+	<style type="text/css">
+		
+		.box
+		{
+			padding-top: 100px ;
+			padding-left: 350px ;
+		}
+		.btn
+		{
+			width: 120px;
+			height: 120px;
+			font-size: 80px;
+			border-radius: 10px;
+			color: maroon;
+			margin-bottom: 5px;
+			background-color: palevioletred;					
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		
+		var t=0;
+		function setval(x)
+		{
+			var k = document.getElementById('btn'+x).value;
+			if(k == ' ')
+			{
+				if(t%2==0)
+				{
+					document.getElementById('btn'+x).value = "x"
+				}
+				else
+				{
+					document.getElementById('btn'+x).value = '0';
+				}
+				t++;
+				checkwin();
+			}
+		}
+
+		function checkwin()
+		{
+			var bt1 = document.getElementById('btn1').value
+			var bt2 = document.getElementById('btn2').value
+			var bt3 = document.getElementById('btn3').value
+			var bt4 = document.getElementById('btn4').value
+			var bt5 = document.getElementById('btn5').value
+			var bt6 = document.getElementById('btn6').value
+			var bt7 = document.getElementById('btn7').value
+			var bt8 = document.getElementById('btn8').value
+			var bt9 = document.getElementById('btn9').value
+
+
+			win(bt1,bt2,bt3,"x");
+			win(bt4,bt5,bt6,"x");
+			win(bt7,bt8,bt9,"x");
+			win(bt1,bt5,bt9,"x");
+			win(bt3,bt5,bt7,"x");
+			win(bt1,bt4,bt7,"x");
+			win(bt2,bt5,bt8,"x");
+			win(bt3,bt6,bt9,"x");
+
+			win(bt1,bt2,bt3,"0");
+			win(bt4,bt5,bt6,"0");
+			win(bt7,bt8,bt9,"0");
+			win(bt1,bt5,bt9,"0");
+			win(bt3,bt5,bt7,"0");
+			win(bt1,bt4,bt7,"0");
+			win(bt2,bt5,bt8,"0");
+			win(bt3,bt6,bt9,"0");
+
+		
+		}
+
+		function win(v1,v2,v3,sign)
+		{
+			if(v1 == sign && v2 == sign && v3 == sign)
+			{
+				alert(sign+"is win");
+				document.getElementById("btn1").disabled = true;
+				document.getElementById("btn2").disabled = true;
+				document.getElementById("btn3").disabled = true;
+				document.getElementById("btn4").disabled = true;
+				document.getElementById("btn5").disabled = true;
+				document.getElementById("btn6").disabled = true;
+				document.getElementById("btn7").disabled = true;
+				document.getElementById("btn8").disabled = true;
+				document.getElementById("btn9").disabled = true;
+			}
+		}
+
+		function reset()
+		{
+			location.reload();
+			document.getElementById("btn1").value = '';
+			document.getElementById("btn2").value = '';
+			document.getElementById("btn3").value = '';
+			document.getElementById("btn4").value = '';
+			document.getElementById("btn5").value = '';
+			document.getElementById("btn6").value = '';
+			document.getElementById("btn7").value = '';
+			document.getElementById("btn8").value = '';
+			document.getElementById("btn9").value = '';
+		}
+	</script>
+</head>
+<body>
+    
+    <div class="box">
+	<input type="button" name="" id="btn1" onclick="setval('1')" class="btn" value=" ">
+	<input type="button" name="" id="btn2" onclick="setval('2')" class="btn" value=" ">
+	<input type="button" name="" id="btn3" onclick="setval('3')" class="btn" value=" "><br>
+	<input type="button" name="" id="btn4" onclick="setval('4')" class="btn" value=" ">
+	<input type="button" name="" id="btn5" onclick="setval('5')" class="btn" value=" ">
+	<input type="button" name="" id="btn6" onclick="setval('6')" class="btn" value=" "><br>
+	<input type="button" name="" id="btn7" onclick="setval('7')" class="btn" value=" "> 
+	<input type="button" name="" id="btn8" onclick="setval('8')" class="btn" value=" ">
+	<input type="button" name="" id="btn9" onclick="setval('9')" class="btn" value=" "><br><br>
+	<button id="but" onclick="reset()">RESET</button>
+    </div>
+    
+</body>
+</html>

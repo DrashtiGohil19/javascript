@@ -1,0 +1,21 @@
+.contect a,.contect i
+{
+	color: white;
+	text-decoration: none;
+}
+.contect a:hover
+{
+	color: yellowgreen !important;
+	transition: .5s;
+}
+.nameres
+{
+	font-family: 'Patrick Hand', cursive;
+	letter-spacing: 1.5px;
+}
+
+
+@media screen and (min-width:) and (max-width:) 
+{
+	
+}

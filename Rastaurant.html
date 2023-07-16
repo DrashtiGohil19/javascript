@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RASTAURANT</title>
+
+	<script type="text/javascript">
+	window.onload=function()
+	{
+    	a=0+' $',b=0+' $',c=0+' $';
+    	document.getElementById('bill').value=a;
+    	document.getElementById('gst').value=b;
+    	document.getElementById('netbill').value=c;
+	}
+	amt=0;
+	function netamountit1() 
+	{
+   		a=document.getElementById('it1').checked;
+   		if(a==true)
+    {
+        amt=amt+2200;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+   else
+    {
+        amt=amt-2200;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    	a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+    	document.getElementById('bill').value=a;
+    	document.getElementById('gst').value=b;
+    	document.getElementById('netbill').value=c;
+	}
+	function netamountit2() 
+	{
+  		a=document.getElementById('it2').checked;
+   		if(a==true)
+    {
+        amt=amt+1980;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+   else
+    {
+        amt=amt-1980;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    	a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+    	document.getElementById('bill').value=a;
+    	document.getElementById('gst').value=b;
+    	document.getElementById('netbill').value=c;
+	}
+		function netamountit3() 
+	{
+   		a=document.getElementById('it3').checked;
+   		if(a==true)
+    {
+        amt=amt+2300;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    else
+    {
+        amt=amt-2300;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    	a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+    	document.getElementById('bill').value=a;
+    	document.getElementById('gst').value=b;
+    	document.getElementById('netbill').value=c;
+	}
+	function netamountit4() 
+	{
+   		a=document.getElementById('it4').checked;
+   		if(a==true)
+    {
+        amt=amt+25000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    else
+    {
+        amt=amt-25000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    	a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+   	 	document.getElementById('bill').value=a;
+    	document.getElementById('gst').value=b;
+    	document.getElementById('netbill').value=c;
+ 	}
+	function netamountit5() 
+	{
+  		 a=document.getElementById('it5').checked;
+  		 if(a==true)
+   	{
+        amt=amt+1400;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+   else
+    {
+        amt=amt-1400;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    	a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+    	document.getElementById('bill').value=a;
+    	document.getElementById('gst').value=b;
+    	document.getElementById('netbill').value=c;
+	}
+	function netamountit6() 
+	{
+   		a=document.getElementById('it6').checked;
+   		if(a==true)
+    {
+        amt=amt+230;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    else
+    {
+        amt=amt-230;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    	a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+    	document.getElementById('bill').value=a;
+    	document.getElementById('gst').value=b;
+   		document.getElementById('netbill').value=c;
+	}
+	function netamountit7() 
+	{
+  		 a=document.getElementById('it7').checked;
+  		 if(a==true)
+    {
+        amt=amt+2800;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    else
+    {
+        amt=amt-2800;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    	a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+    	document.getElementById('bill').value=a;
+    	document.getElementById('gst').value=b;
+    	document.getElementById('netbill').value=c;
+	}
+	function netamountit8() 
+	{
+   		a=document.getElementById('it8').checked;
+   		if(a==true)
+   	{
+        amt=amt+1200;
+        var gst=amt*18/100,totalbill=amt+gst;
+   }
+   else
+    {
+        amt=amt-1200;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+   		 a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+    		document.getElementById('bill').value=a;
+    		document.getElementById('gst').value=b;
+    		document.getElementById('netbill').value=c;
+	}
+	function netamountit9() 
+	{
+   		a=document.getElementById('it9').checked;
+  		 if(a==true)
+    {
+        amt=amt+28000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    else
+    {
+        amt=amt-28000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    	a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+    	document.getElementById('bill').value=a;
+    	document.getElementById('gst').value=b;
+    	document.getElementById('netbill').value=c;
+	}
+	function netamountit10() 
+	{
+   		a=document.getElementById('it10').checked;
+   		if(a==true)
+    {
+        amt=amt+1980;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    else
+    {
+        amt=amt-1980;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+   	 	a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+    	document.getElementById('bill').value=a;
+    	document.getElementById('gst').value=b;
+    	document.getElementById('netbill').value=c;
+	}
+	function netamountit11() 
+	{
+   		a=document.getElementById('it11').checked;
+   		if(a==true)
+    {
+        amt=amt+2199;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    else
+    {
+        amt=amt-2199;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+   		 a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+   		 document.getElementById('bill').value=a;
+   		 document.getElementById('gst').value=b;
+    		document.getElementById('netbill').value=c;
+	}
+	function netamountit12() 
+	{
+   		a=document.getElementById('it12').checked;
+   		if(a==true)
+    {
+        amt=amt+3000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    else
+    {
+        amt=amt-3000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+   		 a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+   		 document.getElementById('bill').value=a;
+   		 document.getElementById('gst').value=b;
+   		 document.getElementById('netbill').value=c;
+	}
+	function netamountit13() 
+	{
+  		 a=document.getElementById('it13').checked;
+   		if(a==true)
+    {
+        amt=amt+3000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    else
+    {
+        amt=amt-3000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    	a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+    	document.getElementById('bill').value=a;
+    	document.getElementById('gst').value=b;
+    	document.getElementById('netbill').value=c;
+	}
+	function netamountit14() 
+	{
+   		a=document.getElementById('it14').checked;
+   		if(a==true)
+    {
+        amt=amt+3000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    else
+    {
+        amt=amt-3000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    	a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+   		 document.getElementById('bill').value=a;
+   		 document.getElementById('gst').value=b;
+    	document.getElementById('netbill').value=c;
+	}
+	function netamountit15() 
+	{
+   		a=document.getElementById('it15').checked;
+   		if(a==true)
+    {
+        amt=amt+3000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    else
+    {
+        amt=amt-3000;
+        var gst=amt*18/100,totalbill=amt+gst;
+    }
+    a=amt+' ₹',b=gst+' ₹',c=totalbill+' ₹';
+    document.getElementById('bill').value=a;
+    document.getElementById('gst').value=b;
+    document.getElementById('netbill').value=c;
+	}
+	</script>
+
+	<style type="text/css">
+		.resto{
+			background-color:#D2B4DE ;
+			color: #A569BD ;
+			text-align: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+			margin: 0;
+		}
+		.bill{
+			background-color:#D2B4DE ;
+			color: #A569BD ;
+			display: flex;
+			text-align: center;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		.bi1{
+			text-align: center;
+		}
+		.box{
+			height: 300px;
+			width: 200px;
+			border: 5px solid #D2B4DE;
+			position: relative;
+			margin: 20px;
+			text-align: center;
+		}
+		.flex{
+			display: flex;
+		}
+		.food_name{
+			text-align: center;
+		}
+		.food_prize{
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body>
+	<h1 class="resto">Creative  Huka  Bar</h1>
+
+	<section class="sec2 g-50 flex">
+		
+		<div class="box">
+			<div class="inner_box">
+				<img src=https://avatars.mds.yandex.net/i?id=adadb91970c2f8e8b10e255caa5d7c014b23c84c-4261589-images-thumbs&n=13>
+			</div>
+			<h2 class="food_name">Chivas Regal</h2>
+			<span class="food_prize">Rs.2200</span>
+			<input type="checkbox" name="it1"  onchange="netamountit1()" id="it1">
+		</div>
+
+		<div class="box ">
+			<div class="inner_box">
+				<img src="https://avatars.mds.yandex.net/i?id=afae1ff1403badc9d68daeec19716c78f7fa31b1-4256101-images-thumbs&n=13">
+			</div>
+			<h2 class="food_name">Black Dog</h2>
+			<span class="food_prize">Rs.1980</span>
+<input type="checkbox" name="it1"  onchange="netamountit2()" id="it2">
+		</div>
+
+		<div class="box ">
+			<div class="inner_box">
+				<img src=https://avatars.mds.yandex.net/i?id=3d08809570fa8f67adee06ffdf54901e-5399233-images-thumbs&n=13>
+			</div>
+			<h2 class="food_name">Glenfiddich</h2>
+			<span class="food_prize">Rs.2300</span>
+<input type="checkbox" name="it1"  onchange="netamountit3()" id="it3">
+		</div>
+
+		<div class="box ">
+			<div class="inner_box">
+				<img src=https://avatars.mds.yandex.net/i?id=e45ba25ae4bcd108160ffcccd71ae987f98c714a-6946998-images-thumbs&n=13>
+			</div>
+			<h2 class="food_name">Ballantine's</h2>
+			<span class="food_prize">Rs.25000</span>
+<input type="checkbox" name="it1"  onchange="netamountit4()" id="it4">
+		</div>
+
+		<div class="box ">
+			<div class="inner_box">
+				<img src=https://sun1-20.userapi.com/s/v1/if1/_eiMnQDzwsvwLBwQ3N03AhZ-rmyob1sKDNfLXffEaV64lTooShNnhq4rXRygb6tXtxx5qg.jpg?size=200x200&quality=96&crop=65,46,347,347&ava=1>
+			</div>
+			<h2 class="food_name">Monkey Shoulder </h2>
+			<span class="food_prize">Rs.1400</span>
+<input type="checkbox" name="it1"  onchange="netamountit5()" id="it5">
+		</div>
+
+	</section>
+
+	<section class="sec2 g-50 flex">
+
+		<div class="box">
+			<div class="inner_box">
+				<img src="https://avatars.mds.yandex.net/i?id=beca74152def467a32c8606824ad237b-5232019-images-thumbs&n=13">
+			</div>
+			<h2 class="food_name">Juice</h2>
+			<span class="food_prize">Rs.230</span>
+<input type="checkbox" name="it1"  onchange="netamountit6()" id="it6">
+		</div>
+
+		<div class="box">
+			<div class="inner_box">
+				<img src="https://avatars.mds.yandex.net/i?id=a3f37a255de0c536603755b0dad4706f-5579767-images-thumbs&n=13"> 
+			</div>
+			<h2 class="food_name">Jack Daniel’s</h2>
+			<span class="food_prize">Rs.2800</span>
+<input type="checkbox" name="it1"  onchange="netamountit7()" id="it7">
+		</div>
+
+		<div class="box">
+			<div class="inner_box">
+				<img src=https://avatars.mds.yandex.net/i?id=628f6fc2899bd67d5e0bf6ea471a022e-5673334-images-thumbs&n=13>
+			</div>
+			<h2 class="food_name">Red Lebal</h2>
+			<span class="food_prize">Rs.1200</span>
+	<input type="checkbox" name="it1"  onchange="netamountit8()" id="it8">
+		</div>
+
+		<div class="box">
+			<div class="inner_box">
+				<img src=https://avatars.mds.yandex.net/i?id=ca24d93184bc04b2dad6aae42b0deae1-5221283-images-thumbs&n=13>
+			</div>
+			<h2 class="food_name">Glenfiddich</h2>
+			<span class="food_prize">Rs.28000</span>
+<input type="checkbox" name="it1"  onchange="netamountit9()" id="it9">
+		</div>
+
+		<div class="box">
+			<div class="inner_box">
+				<img src=https://3dmdb.com/t/4878816.jpg>
+			</div>
+			<h2 class="food_name">Talisker</h2>
+			<span class="food_prize">Rs.1980</span>
+<input type="checkbox" name="it1"  onchange="netamountit10()" id="it10">
+		</div>
+
+	</section>
+
+	<section class="sec2 g-50 flex">
+
+		<div class="box ">
+			<div class="inner_box">
+				<img src=https://avatars.mds.yandex.net/i?id=042a91cc7262c9cd187d0696d1e1664e1c4531b5-5105971-images-thumbs&n=13>
+			</div>
+			<h2 class="food_name">black white</h2>
+			<span class="food_prize">Rs.2199</span>
+			<input type="checkbox" name="it1"  onchange="netamountit11()" id="it11">
+		</div>
+
+		<div class="box ">
+			<div class="inner_box">
+				<img src=https://sun1-85.userapi.com/s/v1/if1/ECx44tHuYMd8ulWzyQ4wQVO9QMMJ7Oi6wkUAV9GEohtPXpMBx4kgmRDFKXXziPn9pPklSjjp.jpg?size=200x200&quality=96&crop=78,0,545,545&ava=1>
+			</div>
+			<h2 class="food_name">Hukka</h2>
+			<span class="food_prize">Rs.3000</span>
+			<input type="checkbox" name="it1"  onchange="netamountit12()" id="it12">
+		</div>
+
+		<!-- <div class="box ">
+			<div class="inner_box">
+				<img src="https://avatars.mds.yandex.net/i?id=05cc6b39fb8647aa52a7828ab8d0e498651215bd-8282929-images-thumbs&n=13">
+			</div>
+			<h2 class="food_name">Veg Pizza</h2>
+			<span class="food_prize">Rs.299</span>
+			<input type="checkbox" name="" value="Add" onclick="getval()" class="btn">
+		</div>
+ -->
+		<div class="box ">
+			<div class="inner_box">
+				<img src=https://i2.wp.com/ae01.alicdn.com/kf/H4d8d85b27a924ad8b1965c3ef764b03f8/Al%C3%BCminyum-nargile-Chicha-Narguile-nargile-aksesuarlar%C4%B1-seti-silikon-t%C3%BCp-cam-%C5%9Fi%C5%9Fe-seti-LED-%C4%B1%C5%9F%C4%B1k-d%C3%B6rt-ki%C5%9Filik.jpg_200x200.jpg>
+			</div>
+			<h2 class="food_name">Hukka</h2>
+			<span class="food_prize">Rs.3000</span>
+			<input type="checkbox" name="it1"  onchange="netamountit13()" id="it13">
+		</div>
+
+		<div class="box ">
+			<div class="inner_box">
+				<img src=https://i.ebayimg.com/thumbs/images/g/NB4AAOSw1YNgQQL5/s-l200.jpg>
+			</div>
+			<h2 class="food_name">Hukka</h2>
+			<span class="food_prize">Rs.3000</span>
+			<input type="checkbox" name="it1"  onchange="netamountit14()" id="it14">
+		</div>
+
+		<div class="box ">
+			<div class="inner_box">
+				<img src=https://sun9-88.userapi.com/s/v1/ig2/C4Cx4SeHoGWHSyUH2DNH33w-rcNdiP-GSRFEM94G-tk9a43H7Rc5ja3aCVm9qlQRMqfasucqGQU0Xge49IEMkQnx.jpg?size=200x200&quality=95&crop=0,222,626,626&ava=1>
+			</div>
+			<h2 class="food_name">Hukka</h2>
+			<span class="food_prize">Rs.3000</span>
+			<input type="checkbox" name="it1"  onchange="netamountit15()" id="it15">
+		</div>
+
+	</section>
+
+	<section>
+
+		<div class="bill">
+			<div>
+				<h3> Bill Amt. :</h3>
+				<input type="text" readonly  id="bill">
+			</div>
+			<div>
+				<h3 class="bi1">GST@(18%) :</h3>
+				<input type="text" readonly  id="gst">
+			</div>
+			<div >
+				<h3>Net Amt. :</h3>
+				<input type="text" readonly id="netbill">
+			</div>
+
+	</section>
+
+</body>
+</html>
